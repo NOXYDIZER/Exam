@@ -25,6 +25,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 18px 0;
 }
 
@@ -33,7 +34,6 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 0 188px 0 76px;
     margin: 0;
 }
 
@@ -59,4 +59,11 @@ li a {
     color: var(--text-main-color);
     padding-bottom: 41.4px;
     border-bottom: 3px solid #FFD644;
+}
+
+.header__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
 }
