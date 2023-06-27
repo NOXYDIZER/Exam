@@ -13,6 +13,7 @@ body {
 
 .row {
     width: 100%;
+    position: relative;
 }
 
 .container {
@@ -73,7 +74,8 @@ li a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 76px;
+    width: 777.29px;
+    justify-content: space-between;
 }
 
 .hero__block {
@@ -127,18 +129,23 @@ li a {
     gap: 65px;
 }
 
+.hero__video__block {
+    position: relative;
+}
+
+.hero__video__block a {
+    z-index: 1;
+    height: 47px;
+    width: 47px;
+    position: absolute;
+    bottom: 58px;
+    left: 49px;
+}
 
 .hero__video {
     width: 100%;
     height: auto;
     position: relative;
-    z-index: 1;
-}
-
-.video__play {
-    position: absolute;
-    top: 809px;
-    left: 209px;
     z-index: 1;
 }
 
@@ -241,7 +248,236 @@ h2 {
     background-color: #F8F1DB;
     height: 270.53px;
     position: absolute;
-    top: 658px;
+    bottom: 0px;
     width: 100%;
     z-index: 0;
+}
+
+.burger {
+    display: none;
+}
+
+.hero__info__mobile {
+    display: none;
+}
+
+.hero__name__mobile {
+    display: none;
+}
+
+.hero__video__mobile {
+    display: none;
+}
+
+.title__mobile {
+    display: none;
+}
+
+.text__title__mobile {
+    display: none;
+}
+
+.text__secondary__color__mobile {
+    display: none;
+}
+
+.text__main__color__mobile {
+    display: none;
+}
+
+.contacts__note__mobile {
+    display: none;
+}
+
+.contacts__mobile {
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 930px) {
+    .nav__desktop {
+        display: none;
+    }
+
+    .contacts__img {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero__info {
+        display: none;
+    }
+
+    .hero__info__mobile {
+        display: block;
+        font-size: 18px;
+        line-height: 25.2px;
+        text-align: center;
+    }
+
+    .hero__cursor {
+        display: none;
+    }
+
+    .hero__block {
+        flex-direction: column;
+    }
+
+    .hero__about {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .hero__name {
+        display: none;
+    }
+
+    .hero__name__mobile {
+        display: block;
+    }
+
+    .hero {
+        gap: 60px;
+        align-items: center;
+    }
+
+    .hero__video {
+        display: none;
+    }
+
+    .hero__video__mobile {
+        display: block;
+    }
+
+    .hero__video__block a {
+        left: 18px;
+        bottom: 22px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title__mobile {
+        display: block;
+        font-size: 34px;
+        line-height: 40.8px;
+        text-align: center;
+        padding: 73px 0 50px 0;
+    }
+
+    .background {
+        height: 210px;
+    }
+
+    .activity__block {
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 30px 30px 0 30px;
+        text-align: center;
+    }
+
+    .activity__text {
+        gap: 16px;
+    }
+
+    .activity__block img {
+        height: 250px;
+        width: 250px;
+        padding: 0;
+    }
+
+    .text__title {
+        display: none;
+    }
+
+    .text__title__mobile {
+        display: block;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .text__secondary__color {
+        display: none;
+    }
+
+    .text__secondary__color__mobile {
+        display: block;
+        font-size: 15px;
+        line-height: 21px;
+        color: var(--text-secondary-color);
+    }
+
+    .text__main__color {
+        display: none;
+    }
+
+    .text__main__color__mobile {
+        display: block;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .activity {
+        padding-bottom: 70px;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .contacts__mobile {
+        flex-direction: column;
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contacts__block {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .contacts__note {
+        display: none;
+    }
+
+    .contacts__note__mobile {
+        display: block;
+        text-align: center;
+        padding: 40px 0 60px 0;
+        font-size: 13px;
+        line-height: 140%;
+        color: var(--text-secondary-color);
+    }
+
+    .title__contacts {
+        width: auto;
+        font-size: 34px;
+        line-height: 40.8px;
+    }
+
+    .contacts__links {
+        gap: 10px;
+    }
+
+    .contacts__mail {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
