@@ -253,7 +253,7 @@ h2 {
     z-index: 0;
 }
 
-.burger {
+.menu__burger {
     display: none;
 }
 
@@ -323,7 +323,7 @@ h2 {
         display: none;
     }
 
-    .burger {
+    .menu__burger {
         display: block;
     }
 
