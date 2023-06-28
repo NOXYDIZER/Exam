@@ -9,10 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const navMenuButton = document.querySelector("#nav__menu__open");
+            navMenuButton.addEventListener("click", function () {
+                const menu = document.querySelector(".menu__mobile");
+                menu.style.display = "";
+            });
+            window.addEventListener("click", function (event) {
+                if (event.target.closest("#nav__menu__open")) {
+                    return;
+                }
+                const menu = document.querySelector(".menu__mobile");
+                menu.style.display = "none";
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="row header">
+        <div class="menu__mobile" style="display: none;">
+            <div class="menu__left">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a class="nav-item--active" href="#">ГЛАВНАЯ</a></li>
+                        <li><a class="nav-item" href="#">Портфолио</a></li>
+                        <li><a class="nav-item" href="#">Услуги</a></li>
+                        <li><a class="nav-item" href="#">Кейсы</a></li>
+                        <li><a class="nav-item" href="#">Выступления</a></li>
+                        <li><a class="nav-item" href="#">Блог</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu__right">
+                <button id="nav__menu__close" class="menu__button close__button">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)"
+                            fill="#828282" />
+                        <rect x="0.831299" y="19.5566" width="27.3715" height="3.8"
+                            transform="rotate(-45 0.831299 19.5566)" fill="#828282" />
+                    </svg>
+                </button>
+            </div>
+        </div>
         <div class="container">
             <header>
                 <div class="header__block">
@@ -36,7 +76,11 @@
                     <a href="#"><img src="./img/f.svg" width="44" height="44"></a>
                     <a href="#"><img src="./img/t.svg" width="44" height="44"></a>
                 </div>
-                <img class="burger" src="./img/burger.svg">
+                <div class="menu__burger">
+                    <button class="menu__button" id="nav__menu__open">
+                        <img class="burger" src="./img/burger.svg">
+                    </button>
+                </div>
             </header>
         </div>
     </div>
