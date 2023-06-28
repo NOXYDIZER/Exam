@@ -44,6 +44,11 @@ li a {
     color: var(--text-secondary-color);
     font-size: 14px;
     line-height: 25px;
+    transition: 400ms;
+}
+
+li a:hover {
+    color: var(--text-main-color);
 }
 
 .contacts__img {
@@ -204,10 +209,11 @@ h2 {
 
 .activity__link {
     color: #E9B500;
+    transition: 400ms;
 }
 
-.activity__block img {
-    padding-left: 30px;
+.activity__link:hover {
+    color: #286c76;
 }
 
 .title__contacts {
@@ -226,6 +232,15 @@ h2 {
 .contacts__links {
     display: flex;
     gap: 22px;
+}
+
+.contacts__links a {
+    transition: 400ms;
+    overflow: hidden;
+}
+
+.contacts__links a:hover {
+    transform: scale(115%);
 }
 
 .contacts__mail {
@@ -306,6 +321,15 @@ h2 {
     z-index: 3;
     border: 1px solid black;
     margin: 0 -10px;
+}
+
+.contacts__img a {
+    transition: 400ms;
+    overflow: hidden;
+}
+
+.contacts__img a:hover {
+    transform: scale(115%);
 }
 
 @media (max-width: 1060px) {
