@@ -185,6 +185,10 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.10);
 }
 
+.activity__block img {
+    padding-left: 30px;
+}
+
 .activity__text {
     display: flex;
     flex-direction: column;
