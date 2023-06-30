@@ -558,3 +558,44 @@ h2 {
     }
 
 }
+
+.portfolio__title {
+    display: flex;
+    gap: 169px;
+    padding: 70px 0;
+}
+
+.title__description {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.portfolio__block {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.portfolio__image {
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+}
+
+.image__description {
+    width: 244px;
+    font-size: 18px;
+    line-height: 130%;
+    padding: 20px 96px 34px 40px;
+    margin-right: 0;
+}
+
+.portfolio__body {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
