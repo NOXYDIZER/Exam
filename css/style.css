@@ -223,7 +223,7 @@ h2 {
 .title__contacts {
     font-size: 44px;
     line-height: 52.8px;
-    width: 239.84px;
+    width: 278.08px;
 }
 
 .contacts {
@@ -252,6 +252,11 @@ h2 {
     line-height: 33.8px;
     text-decoration: none;
     color: var(--text-main-color);
+    transition: 400ms;
+}
+
+.contacts__mail:hover {
+    text-decoration: underline;
 }
 
 .contacts__note {
@@ -334,6 +339,10 @@ h2 {
 
 .contacts__img a:hover {
     transform: scale(115%);
+}
+
+.title__description__mobile {
+    display: none;
 }
 
 @media (max-width: 1060px) {
@@ -557,12 +566,68 @@ h2 {
         border-bottom: 2px solid #FFD644;
     }
 
+    div.portfolio__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div.portfolio__title {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    h1.portfolio {
+        font-size: 34px;
+    }
+
+    div.title__description {
+        display: none;
+    }
+
+    div.title__description__mobile {
+        display: block;
+        font-size: 18px;
+        line-height: 140%;
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    div.portfolio__body {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 70px 0;
+    }
+
+    div.portfolio__block {
+        padding: 0 30px 30px 30px;
+    }
+
+    div.portfolio__image {
+        height: 300px;
+        border-bottom: none;
+    }
+
+    div.image__description a {
+        font-size: 20px;
+    }
+
+    div.image__description {
+        text-align: center;
+        padding: 0;
+    }
+
+    div.portfolio__image a {
+        text-align: center;
+    }
 }
 
 .portfolio__title {
     display: flex;
-    gap: 169px;
     padding: 70px 0;
+    max-width: 994px;
+    justify-content: space-between;
 }
 
 .title__description {
@@ -585,12 +650,28 @@ h2 {
     margin-right: 0;
 }
 
+.portfolio__image a {
+    transition: 400ms;
+}
+
+.portfolio__image a:hover {
+    transform: scale(105%);
+}
+
 .image__description {
-    width: 244px;
     font-size: 18px;
     line-height: 130%;
     padding: 20px 96px 34px 40px;
     margin-right: 0;
+}
+
+.image__description a {
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
+.image__description a:hover {
+    text-decoration: underline;
 }
 
 .portfolio__body {
@@ -598,4 +679,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.portfolio {
+    font-size: 44px;
+    line-height: 53px;
 }
