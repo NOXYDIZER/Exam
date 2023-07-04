@@ -8,23 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
     <title>Главная</title>
-    <script>
-        window.addEventListener("DOMContentLoaded", function () {
-            const navMenuButton = document.querySelector("#nav__menu__open");
-            navMenuButton.addEventListener("click", function () {
-                const menu = document.querySelector(".menu__mobile");
-                menu.style.display = "";
-            });
-            window.addEventListener("click", function (event) {
-                if (event.target.closest("#nav__menu__open")) {
-                    return;
-                }
-                const menu = document.querySelector(".menu__mobile");
-                menu.style.display = "none";
-            });
-        });
-    </script>
 </head>
 
 <body>
