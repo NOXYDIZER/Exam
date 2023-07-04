@@ -661,6 +661,81 @@ h2 {
     div.cases__body {
         padding: 0;
     }
+
+    div.speeches__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .speeches__text__article {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .speeches__hero {
+        display: none;
+    }
+
+    img.speeches__hero__mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    div.speeches__link__block {
+        padding-bottom: 12px;
+    }
+
+    div.speeches__article__title {
+        font-size: 28px;
+        width: 274px;
+    }
+
+    div.speeches__image__block {
+        padding: 60px 0 50px 0;
+    }
+
+    img.speeches__play__article {
+        bottom: 102px;
+    }
+
+    div.speeches__text__title {
+        font-size: 15px;
+        line-height: 140%;
+        width: 280px;
+    }
+}
+
+.speeches__iamge__mobile {
+    display: none;
+}
+
+@media (max-width: 785px) {
+    div.speeches__body {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+
+    a.speeches__link {
+        font-size: 20px;
+    }
+
+    div.speeches__text {
+        text-align: center;
+    }
+
+    .speeches__iamge__desktop {
+        display: none;
+    }
+
+    .speeches__iamge__mobile {
+        display: block;
+    }
+
+    div.speeches__body {
+        padding: 70px 0;
+    }
 }
 
 @media (max-width: 650px) {
@@ -811,5 +886,87 @@ div.last {
 }
 
 .cases__main__image__mobile {
+    display: none;
+}
+
+.speeches__body {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+    justify-items: center;
+}
+
+.speeches__image {
+    position: relative;
+}
+
+.speeches__play {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.speeches__text {
+    padding-top: 20px;
+}
+
+.speeches__link {
+    font-size: 18px;
+    line-height: 130%;
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
+.speeches__link:hover {
+    text-decoration: underline;
+}
+
+.recall__link__speeches {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 13px;
+    line-height: 135%;
+}
+
+.speeches__link__block {
+    padding: 20px 0 32px 0;
+}
+
+.speeches__article__title {
+    font-size: 44px;
+    width: 598px;
+    line-height: normal;
+}
+
+.speeches__image__block {
+    position: relative;
+    padding: 72px 0 62px 0;
+}
+
+.speeches__play__article {
+    position: absolute;
+    left: 49px;
+    bottom: 114px;
+}
+
+.speeches__text__title {
+    font-size: 20px;
+    line-height: 30px;
+    width: 633px;
+    padding-bottom: 18px;
+}
+
+.speeches__hero {
+    width: 100%;
+    height: auto;
+}
+
+.recall__link__speeches:hover {
+    text-decoration: underline;
+}
+
+.speeches__hero__mobile {
     display: none;
 }
