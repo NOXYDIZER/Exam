@@ -573,10 +573,6 @@ h2 {
         border-bottom: 2px solid #FFD644;
     }
 
-    div.portfolio__body {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     div.portfolio__title {
         flex-direction: column;
         gap: 30px;
@@ -668,10 +664,6 @@ h2 {
 
     div.cases__body {
         padding: 0;
-    }
-
-    div.speeches__body {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .speeches__text__article {
@@ -768,7 +760,6 @@ h2 {
 
 @media (max-width: 785px) {
     div.speeches__body {
-        grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
 
@@ -795,7 +786,6 @@ h2 {
 
 @media (max-width: 650px) {
     div.portfolio__body {
-        grid-template-columns: repeat(1, 1fr);
         padding: 70px 0;
     }
 
@@ -876,8 +866,9 @@ h2 {
 .portfolio__body {
     padding: 100px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 406.4px);
     gap: 10px;
+    justify-content: center;
 }
 
 .portfolio {
@@ -948,10 +939,10 @@ div.last {
 .speeches__body {
     padding: 100px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 360px);
     row-gap: 30px;
     column-gap: 40px;
-    justify-items: center;
+    justify-content: center;
 }
 
 .speeches__image {
