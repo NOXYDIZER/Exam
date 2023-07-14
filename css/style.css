@@ -59,6 +59,12 @@ li a:hover {
 
 .header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.2);;
 }
 
 .nav-active {
@@ -132,6 +138,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     gap: 65px;
+    padding-top: 106.6px;
 }
 
 .hero__video__block {
@@ -573,7 +580,7 @@ h2 {
     div.portfolio__title {
         flex-direction: column;
         gap: 30px;
-        padding-top: 50px;
+        padding-top: 140.6px;
         align-items: center;
     }
 
@@ -612,6 +619,7 @@ h2 {
         display: block;
         width: 100%;
         height: auto;
+        padding-top: 90.6px;
     }
 
     div.cases__image {
@@ -745,7 +753,7 @@ h2 {
 
     div.blog__title {
         text-align: center;
-        padding: 50px 0;
+        padding: 140.6px 0 50px 0;
         font-size: 34px;
     }
 
@@ -816,7 +824,7 @@ h2 {
 
 .portfolio__title {
     display: flex;
-    padding: 70px 0;
+    padding: 176.6px 0 70px 0;
     max-width: 994px;
     justify-content: space-between;
 }
@@ -883,7 +891,7 @@ h2 {
    color: var(--text-secondary-color);
    font-size: 13px;
    line-height: 135%;
-   top: 20px; 
+   top: 126.6px; 
 }
 
 .recall__link a:hover {
@@ -930,6 +938,7 @@ div.last {
 .cases__main__image {
     width: 100%;
     height: auto;
+    padding-top: 106.6px;
 }
 
 .cases__main__image__mobile {
@@ -1020,7 +1029,7 @@ div.last {
 
 .blog__title {
     font-size: 44px;
-    padding: 70px 0 80px 0;
+    padding: 176.6px 0 80px 0;
 }
 
 .blog__body {
@@ -1077,4 +1086,8 @@ div.last {
 
 .blog__image__mobile {
     display: none;
+}
+
+.speeches__text__article {
+    padding-top: 106.6px;
 }
