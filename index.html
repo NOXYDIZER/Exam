@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
     <title>Главная</title>
 </head>
@@ -42,13 +45,13 @@
             <header>
                 <div class="header__block">
                     <div class="logo">
-                        <img src="./img/logo.svg" width="65" height="65">
+                        <img src="./img/logo.svg" alt="Logo" width="65" height="65">
                     </div>
                     <nav class="nav__desktop">
                         <ul>
                             <li><a class="nav-active" href="./index.html">ГЛАВНАЯ</a></li>
                             <li><a href="./portfolio.html">Портфолио</a></li>
-                            <li><a href="./cases.html">Услуги</a></li>
+                            <li><a href="./services.html">Услуги</a></li>
                             <li><a href="./cases.html">Кейсы</a></li>
                             <li><a href="./speeches.html">Выступления</a></li>
                             <li><a href="./blog.html">Блог</a></li>
@@ -56,14 +59,18 @@
                     </nav>
                 </div>
                 <div class="contacts__img">
-                    <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg" width="44" height="44"></a>
-                    <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" width="44" height="44"></a>
-                    <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" width="44" height="44"></a>
-                    <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" width="44" height="44"></a>
+                    <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg" alt="YouTube channel"
+                            width="44" height="44"></a>
+                    <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" alt="Telegram" width="44"
+                            height="44"></a>
+                    <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" alt="Facebook" width="44"
+                            height="44"></a>
+                    <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" alt="Tenchat" width="44"
+                            height="44"></a>
                 </div>
                 <div class="menu__burger">
                     <button class="menu__button" id="nav__menu__open">
-                        <img class="burger" src="./img/burger.svg">
+                        <img class="burger" src="./img/burger.svg" alt="Mobile menu">
                     </button>
                 </div>
             </header>
@@ -75,9 +82,9 @@
         <div class="container">
             <div class="hero">
                 <div class="hero__about">
-                    <div class="hero__block">
+                    <div class="hero__block animate__animated animate__fadeIn">
                         <div class="hero__img">
-                            <img src="./img/hero.jpg" width="120" height="120">
+                            <img src="./img/hero.jpg" alt="Denis Davydov" width="120" height="120">
                         </div>
                         <h1 class="hero__name">
                             Денис<br>
@@ -111,10 +118,12 @@
                     </div>
                 </div>
                 <div class="hero__video__block">
-                    <img class="hero__video" src="./img/video.svg" width="1160" height="502">
-                    <img class="hero__video__mobile" src="./img/video_mobile.svg" width="340" height="420">
-                    <a href="https://youtu.be/HLYsRavNTwM"><img class="video__play" src="./img/play.svg" width="47"
-                            height="47"></a>
+                    <a href="https://youtu.be/HLYsRavNTwM"><img class="hero__video" src="./img/video.svg"
+                            alt="Denis Davydov introduction" width="1160" height="502"></a>
+                    <a href="https://youtu.be/HLYsRavNTwM"><img class="hero__video__mobile" src="./img/video_mobile.svg"
+                            alt="Denis Davydov introduction" width="340" height="420"></a>
+                    <a class="video__play" href="https://youtu.be/HLYsRavNTwM"><img src="./img/play.svg"
+                            alt="play button" width="47" height="47"></a>
                 </div>
             </div>
         </div>
@@ -123,14 +132,14 @@
 
     <div class="row row-alternative-color">
         <div class="container">
-            <h1 class="title">Что я делал и делаю</h1>
-            <h1 class="title__mobile">
+            <h1 class="title" data-aos="fade-left">Что я делал и делаю</h1>
+            <h1 class="title__mobile" data-aos="fade-left">
                 Что я делал<br>
                 и делаю
             </h1>
             <div class="activity">
-                <div class="activity__block">
-                    <img src="./img/process.png" width="360" height="360">
+                <div class="activity__block" data-aos="fade-right">
+                    <img src="./img/process.png" alt="process image" width="360" height="360">
                     <div class="activity__text">
                         <h2 class="text__title">Выстраиваю редакции и процессы</h2>
                         <h2 class="text__title__mobile">
@@ -158,8 +167,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="activity__block">
-                    <img src="./img/analysis.png" width="360" height="360">
+                <div class="activity__block" data-aos="fade-left">
+                    <img src="./img/analysis.png" alt="analysis image" width="360" height="360">
                     <div class="activity__text">
                         <h2 class="text__title">
                             Пишу, редактирую и анализирую контент
@@ -189,8 +198,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="activity__block">
-                    <img src="./img/conferention.png" width="360" height="360">
+                <div class="activity__block" data-aos="fade-right">
+                    <img src="./img/conferention.png" alt="conferention image" width="360" height="360">
                     <div class="activity__text">
                         <h2 class="text__title">
                             Выступаю на конференциях<br>
@@ -225,8 +234,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="activity__block">
-                    <img src="./img/consulting.png" width="360" height="360">
+                <div class="activity__block" data-aos="fade-left">
+                    <img src="./img/consulting.png" alt="consulting image" width="360" height="360">
                     <div class="activity__text">
                         <h2 class="text__title">Консультирую и помогаю учиться</h2>
                         <h2 class="text__title__mobile">
@@ -244,8 +253,10 @@
                             рассказываю про свой опыт.
                         </div>
                         <div class="text__main__color">
-                            Узнать про консультации можно у меня <a class="activity__link" href="https://t.me/freud_cat">напрямую</a>,<br>
-                            а можно через <a class="activity__link" href="https://solvery.io/ru/mentor/9396">Solvery.</a>
+                            Узнать про консультации можно у меня <a class="activity__link"
+                                href="https://t.me/freud_cat">напрямую</a>,<br>
+                            а можно через <a class="activity__link"
+                                href="https://solvery.io/ru/mentor/9396">Solvery.</a>
                         </div>
                         <div class="text__main__color__mobile">
                             Узнать про консультации можно у<br>
@@ -254,8 +265,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="activity__block">
-                    <img src="./img/blog.png" width="360" height="360">
+                <div class="activity__block" data-aos="fade-right">
+                    <img src="./img/blog.png" alt="blog image" width="360" height="360">
                     <div class="activity__text">
                         <h2 class="text__title">Веду свой блог</h2>
                         <h2 class="text__title__mobile">Веду свой блог</h2>
@@ -270,7 +281,8 @@
                         </div>
                         <div class="text__main__color">
                             А ещё веду «проекты для души».<br>
-                            Например, телеграм-канал <a class="activity__link" href="https://t.me/lava_sh">«Записки в лаваше».</a>
+                            Например, телеграм-канал <a class="activity__link" href="https://t.me/lava_sh">«Записки в
+                                лаваше».</a>
                         </div>
                         <div class="text__main__color__mobile">
                             А ещё веду «проекты для души».<br>
@@ -285,32 +297,40 @@
 
     <div class="row">
         <div class="container">
-            <div class="contacts">
+            <div class="contacts" data-aos="fade-down">
                 <h1 class="title__contacts">Контакты</h1>
                 <div class="contacts__links">
-                    <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg" alt="YouTube" width="68" height="68"></a>
-                    <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" width="68" height="68"></a>
-                    <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" width="68" height="68"></a>
-                    <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" width="68" height="68"></a>
+                    <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg" alt="YouTube channel"
+                            width="68" height="68"></a>
+                    <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" alt="Telegram" width="68"
+                            height="68"></a>
+                    <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" alt="Facebook" width="68"
+                            height="68"></a>
+                    <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" alt="Tenchat" width="68"
+                            height="68"></a>
                 </div>
                 <h2><a class="contacts__mail" href="mailto:davydov@freud-cat.ru">davydov@freud-cat.ru</a></h2>
             </div>
-            <div class="contacts__mobile">
+            <div class="contacts__mobile" data-aos="fade-down">
                 <h1 class="title__contacts">Контакты</h1>
                 <div class="contacts__block">
                     <div class="contacts__links">
-                        <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg" alt="YouTube" width="50" height="50"></a>
-                        <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" width="50" height="50"></a>
-                        <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" width="50" height="50"></a>
-                        <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" width="50" height="50"></a>
+                        <a href="https://www.youtube.com/@FreudMethod"><img src="./img/youtube.svg"
+                                alt="YouTube channel" width="50" height="50"></a>
+                        <a href="https://t.me/freud_cat"><img src="./img/telegram.svg" alt="Telegram" width="50"
+                                height="50"></a>
+                        <a href="https://www.facebook.com/freud.cat"><img src="./img/f.svg" alt="Facebook"
+                                alt="Facebook" width="50" height="50"></a>
+                        <a href="https://tenchat.ru/freud-cat"><img src="./img/t.svg" alt="Tenchat" width="50"
+                                height="50"></a>
                     </div>
                     <h2><a class="contacts__mail" href="mailto:davydov@freud-cat.ru">davydov@freud-cat.ru</a></h2>
                 </div>
             </div>
-            <div class="contacts__note">
+            <div class="contacts__note" data-aos="zoom-in">
                 *Meta признана экстремистской организацией
             </div>
-            <div class="contacts__note__mobile">
+            <div class="contacts__note__mobile" data-aos="zoom-in">
                 *Meta признана экстремистской<br>
                 организацией
             </div>

@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded", function(){
+        AOS.init();
+})
+
 window.addEventListener("DOMContentLoaded", function () {
     const navMenuButton = document.querySelector("#nav__menu__open");
     navMenuButton.addEventListener("click", function () {

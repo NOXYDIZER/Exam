@@ -64,7 +64,8 @@ li a:hover {
     left: 0;
     z-index: 100;
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.2);;
+    background-color: rgba(255, 255, 255, 0.2);
+    ;
 }
 
 .nav-active {
@@ -100,6 +101,9 @@ li a:hover {
     padding: 8px;
     border: 3px solid #FFD644;
     border-radius: 100px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    visibility: visible;
 }
 
 .hero__name {
@@ -107,11 +111,21 @@ li a:hover {
     line-height: 53px;
     width: 291px;
     margin: 0;
+    animation: fadeIn;
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .hero__info {
     font-size: 20px;
     line-height: 25px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .cursor__text {
@@ -126,6 +140,11 @@ li a:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .cursor {
@@ -143,9 +162,14 @@ li a:hover {
 
 .hero__video__block {
     position: relative;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
-.hero__video__block a {
+.hero__video__block a.video__play {
     z-index: 1;
     height: 47px;
     width: 47px;
@@ -384,6 +408,11 @@ h2 {
         font-size: 18px;
         line-height: 25.2px;
         text-align: center;
+        animation: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 0.4s;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
 
     .hero__cursor {
@@ -405,6 +434,11 @@ h2 {
 
     .hero__name__mobile {
         display: block;
+        animation: fadeIn;
+        animation-duration: 0.8s;
+        animation-delay: 0.2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
 
     .hero {
@@ -594,6 +628,11 @@ h2 {
         line-height: 140%;
         width: 300px;
         text-align: center;
+        animation: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 0.2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
 
     div.cases__text__block {
@@ -822,6 +861,11 @@ h2 {
 .title__description {
     font-size: 20px;
     line-height: 30px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .portfolio__block {
@@ -874,15 +918,25 @@ h2 {
 .portfolio {
     font-size: 44px;
     line-height: 53px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .recall__link a {
     position: absolute;
-   text-decoration: none;
-   color: var(--text-secondary-color);
-   font-size: 13px;
-   line-height: 135%;
-   top: 126.6px; 
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 13px;
+    line-height: 135%;
+    top: 126.6px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
 }
 
 .recall__link a:hover {
@@ -930,6 +984,10 @@ div.last {
     width: 100%;
     height: auto;
     padding-top: 106.6px;
+    animation: fadeIn;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .cases__main__image__mobile {
@@ -975,6 +1033,10 @@ div.last {
     color: var(--text-secondary-color);
     font-size: 13px;
     line-height: 135%;
+    animation: fadeIn;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .speeches__link__block {
@@ -985,11 +1047,21 @@ div.last {
     font-size: 44px;
     width: 598px;
     line-height: normal;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .speeches__image__block {
     position: relative;
     padding: 72px 0 62px 0;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .speeches__play__article {
@@ -1021,6 +1093,10 @@ div.last {
 .blog__title {
     font-size: 44px;
     padding: 176.6px 0 80px 0;
+    animation: fadeIn;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .blog__body {
@@ -1081,4 +1157,22 @@ div.last {
 
 .speeches__text__article {
     padding-top: 106.6px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cases__main__title {
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
